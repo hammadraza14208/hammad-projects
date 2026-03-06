@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="converter">
+      <h1 class="converter__title">Currency Converter</h1>
+
+      <form class="converter__form" id="converterForm">
+        <!-- Amount Input -->
+        <div class="form-group">
+          <label for="amount" class="form-label">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            class="form-input"
+            placeholder="Enter amount"
+            required
+          />
+        </div>
+
+        <!-- From Currency -->
+        <div class="form-group">
+          <label for="fromCurrency" class="form-label">From</label>
+          <select id="fromCurrency" class="form-select from"></select>
+        </div>
+
+        <!-- To Currency -->
+        <div class="form-group">
+          <label for="toCurrency" class="form-label">To</label>
+          <select id="toCurrency" class="form-select to"></select>
+        </div>
+
+        <!-- Convert Button -->
+        <button type="submit" class="convert-btn">Convert</button>
+      </form>
+
+      <!-- Result Section -->
+      <div class="converter__result" id="result">
+        <!-- Converted result will appear here -->
+         
+      </div>
+    </main>
+
+  </body>
+      <script src="script.js" defer></script>
+</html>
