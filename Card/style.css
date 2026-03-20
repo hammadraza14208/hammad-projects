@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainWraper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 8px; padding: 8px; */
+  background-color: hsl(49, 85%, 70%);
+}
+.card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 8px;
+  width: 340px;
+  height: 470px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 0 black;
+  border-radius: 13px;
+}
+.card img {
+  border-radius: 11px;
+}
+.card > * {
+  margin: 4px;
+}
+.card div {
+  display: flex;
+  align-items: center;
+}
+.card div img {
+  padding: 2px;
+  /* margin: 4px; */
+}
+.learn {
+  background-color: hsl(45, 86%, 58%);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: sora, sans-serif;
+  font-weight: 300;
+}
+.publish {
+  font-family: sora, sans-serif;
+}
+.card h1 {
+  font-size:18px;
+  font-family: sora, sans-serif;
+
+  font-weight: 700;
+}
+.card h1:hover {
+  color: hsl(49, 85%, 70%);
+  cursor: pointer;
+}
+.pera {
+  color: hsl(0, 0%, 42%);
+  font-size: 14px;
+  font-family: sora, sans-serif;
+}
+.card div p {
+  font-family: soraz, sans-serif;
+  font-weight: bold;
+  padding: 2px;
+  margin: 3px;
+}
