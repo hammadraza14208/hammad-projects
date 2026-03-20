@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #9c9c9c;
+  --heading-color: #fff;
+  --button-color: #62ba1b;
+  --background-color: #080808;
+  --nav-background-color: #1b1b1b;
+  --font-family: "IBM Plex Mono", monospace;
+  --main-font-size: 14px;
+  --heading-font-faimily: "Raleway", sans-serif;
+  --heading-font-size: 44px;
+}
+.container {
+  background-color: var(--background-color);
+  max-width: 100vvh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 20px 40px;
+  width: min(90%, 1100px);
+  /* min-width: 50%; */
+  margin: auto;
+  /* max-width: 100%; */
+  /* width: 85vw; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  /* height: 15vh; */
+  flex-wrap: wrap;
+  min-height: 80px;
+}
+.first-buttons {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.navbar ul:last-child {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.first-buttons li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: var(--main-font-size);
+  transition: all 0.3s ease;
+}
+@media (max-width: 890px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .first-buttons {
+    gap: 15px;
+  }
+
+  .first-buttons li a {
+    font-size: 12px;
+  }
+
+  .navbar ul:last-child {
+    gap: 12px;
+  }
+}
+@media (max-width: 523px) {
+  .navbar {
+    padding: 10px 12px; /* smaller padding */
+  }
+
+  .first-buttons {
+    gap: 10px; /* smaller spacing */
+  }
+
+  .first-buttons li a {
+    font-size: 11px; /* smaller text */
+  }
+
+  .navbar ul:last-child {
+    gap: 10px; /* smaller icon spacing */
+  }
+}
+.navbar ul:last-child li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  font-family: var(--font-family);
+}
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 40px; */
+  /* padding: 60px 0; */
+  width: min(90%, 1100px);
+  margin: auto;
+  /* flex-wrap: wrap; */
+  min-height: calc(
+    100vh - 220px
+  ); /* full viewport height minus navbar height */
+  /* height: 85vh; */
+  /* border: 2px solid red; */
+}
+.about h1 {
+  color: var(--heading-color);
+  font-family: var(--heading-font-faimily);
+  font-size: var(--heading-font-size);
+  font-weight: bolder;
+}
+.about p {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--main-font-size);
+  margin-top: 20px;
+  max-width: 500px;
+}
+.img img {
+  width: 300px; /* desktop size */
+  height: 300px;
+  object-fit: cover; /* prevents distortion */
+  border-radius: 50%;.img img {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+  object-position: top;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 523px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  /* border: 2px solid red; */
+  width: min(90%, 1100px);
+  margin: auto;
+  /* margin-top: 40px; */
+  min-height: min(200px, 20vh);
+  justify-content: center;
+}
+.work-with {
+  display: flex;
+  gap: 20px;
+}
+
+.experiences p {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--main-font-size);
+  margin-bottom: 10px;
+}
+.work-with li {
+  list-style: none;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 8px; */
+    padding: 10px;
+    border: 2px solid var(--nav-background-color);
+}
+.work-with li img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  /* border: 2px solid red; */
+
+}
+/* now working on the button lets get  */
+.about button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--button-color);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: var(--main-font-size);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #71B13E;
+margin-top: 50px;
+width: 200px;
+text-align: center;
+}.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+/* Now we are going to work on 2nd section of the page which is the about section and we will make it responsive as well. */
+:root{
+  --about-heading-font-size: 34px;
+  --about-paragraph-font-size: 14px;
+  --about-heading-font-family: 'Raleway', sans-serif;
+  --about-paragraph-font-family: 'IBM Plex Mono', monospace;
+  --about-heading-color: #080808;
+  --about-background-color: #FFFFFF;
+}
+.seconnd-box {
+  background-color: var(--about-background-color);
+display: flex;
+align-items: center;
+flex-direction: column;
+align-items: center;
+max-height: 100vh;
+max-width: 90vw;
+margin: auto;
+border :2px solid red;
+
+}
+.heading{ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(21, 17, 17);
+  width: 80%;
+  height: 80vh
+
+}

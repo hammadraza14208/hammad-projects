@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  /* width: 100vw;margin: 3px; border: 1px solid black; */
+}
+.left {
+  width: 25vw;
+  margin: 2px;
+  border: 1px solid rgb(170, 18, 18);
+  min-height: 99vh;
+  max-height: fit-content;
+}
+.right {
+  width: 75vw;
+  margin: 2px;
+  border: 1px solid rgb(191, 33, 33);
+}
+.home ul li {
+  list-style: none;
+  width: 23px;
+  display: flex;
+  gap: 15px;
+  margin: 14px 0;
+  /* color: black; */
+}
+.home {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.left {
+  background-color: black;
+  margin: 8px;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+
+.library {
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 70%;
+  position: relative;
+}
+.library-box img {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.library-box {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+.footer div a {
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+  gap: 1px;
+  flex-wrap: wrap;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  /* width: 100%; */
+  /* padding: 10px; */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  /* background-color: black; */
+  color: white;
+  background-color: #0c0a0a;
+}
+.header {
+  min-width: 20vw;
+}
+.playlist-opt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.card {
+  border: 2px solid red;
+  /* background-color: white; */
+  margin: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* padding: 8px; */
+max-height: 187px;
+}
+.card img {
+height: 50%;
+width: 100%;
+object-fit: cover;
+margin:auto;
+border-radius: 8px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  max-height: 65%;
+  overflow: scroll;
+}

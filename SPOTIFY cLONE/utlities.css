@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.left{
+    width: 25vw;
+}
+.right{
+    width: 80vw;
+}
+.border{
+    border: 1px solid rgb(150, 35, 35);     
+}
+.bg-black{
+    background-color: black;
+}
+.invert{
+    filter: invert(1);
+}
+.list-none{
+    list-style: none;
+}
+.bg-gray{
+    background-color:#121212;
+}
